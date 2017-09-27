@@ -1,6 +1,8 @@
 AutoForm.addInputType('jsonInterpreter', {
     template: 'jsonInterpreter',
     valueOut: function() {
-        return this[0].innerHTML;
+        let int = 'int',
+            string = 'string';
+        return eval(this.val());
     }
 });
