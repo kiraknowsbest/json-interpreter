@@ -9,6 +9,6 @@ AutoForm.addInputType('jsonInterpreter', {
        }
     },
     valueIn: function (val) {
-        return JSON.stringify(val );
+        return JSON.stringify(val);
     }
 });
