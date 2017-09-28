@@ -12,3 +12,9 @@ AutoForm.addInputType('jsonInterpreter', {
         return JSON.stringify(val);
     }
 });
+
+Template.jsonInterpreter.helpers({
+    dataSchemaKey: function () {
+        return this.atts['data-schema-key'];
+    }
+});
