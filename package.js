@@ -1,6 +1,6 @@
 Package.describe({
   name: 'kiraknowsbest:json-interpreter',
-  version: '1.0.6',
+  version: '1.0.7',
   summary: 'autoform input: JSON String => JSON Object',
   git: 'https://github.com/kiraknowsbest/json-interpreter',
   documentation: 'README.md'
