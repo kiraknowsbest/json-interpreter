@@ -2,14 +2,15 @@ AutoForm.addInputType('jsonInterpreter', {
     template: 'jsonInterpreter',
     valueOut: function() {
        try {
-           return JSON.parse(this.val());
+           var json = JSON.parse(this.val());
+           return JSON.stringify(json);
        }
        catch (e) {
            console.error(e.message);
        }
     },
     valueIn: function (val) {
-        return JSON.stringify(val);
+        return val;
     }
 });
 
